@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    top: 40px;
+}
+.container h1{
+    font-size: 37px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Nova Square', sans-serif;
+}
+h1 img{
+    width: 55px;
+    position: relative;
+    top: 15px;
+}
+marquee{
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.forms{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+input{
+    position: relative;
+    padding: 10px 58px;
+    text-align: center;
+    border-radius: 3px;
+    font-family: 'Nova Square', sans-serif;
+}
+.btn{
+    font-weight: bold;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-family: 'Nova Square', sans-serif;
+}
+table{
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
+th, tr, td{
+  width: 45%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 30px;
+}
+thead{
+    background-color: #eee;
+    font-family: 'Nova Square', sans-serif;
+}
+tbody{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+button{
+    padding: 6px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
