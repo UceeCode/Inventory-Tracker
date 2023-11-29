@@ -10,4 +10,12 @@ class Inventory{
         this.items.push(item);
         this.renderInventory();
     }
+
+    //creating a delete method to remove one item from the items array
+    deleteItems(i){
+        this.items.splice(i, 1);
+        this.renderInventory();
+    }
 }
+
+
