@@ -16,6 +16,24 @@ class Inventory{
         this.items.splice(i, 1);
         this.renderInventory();
     }
+
+    //creating a method to display the items in the table body
+    renderInventory(){
+        const TableBody = document.querySelector('#Table tbody');
+        TableBody.innerHTML = '';
+
+        this.items.forEach((item, i) =>{
+            const row = TableBody.insertRow();
+            row.insertCell(0).textContent = item.ProductName;
+            row.insertCell(1).textContent = item.Quantity;
+
+            const DeleteBtn = document.createElement('button');
+            DeleteBtn.textContent = 'Delete';
+            DeleteBtn.onclick = () => this.deleteItems(i);
+
+            row.insertCell(2).appendChild(DeleteBtn);;
+        });
+    }
 }
 
 
