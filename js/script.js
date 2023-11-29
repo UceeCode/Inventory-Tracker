@@ -38,7 +38,7 @@ class Inventory{
 
 const inventory = new Inventory();   
 
-const AddItems = () => {
+const addItems = () => {
     const ProductName = document.getElementById('productName').value;
     const ProductQuantity = document.getElementById('productQuantity').value;
 
