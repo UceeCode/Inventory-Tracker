@@ -36,4 +36,20 @@ class Inventory{
     }
 }
 
+const inventory = new Inventory();   
+
+const AddItems = () => {
+    const ProductName = document.getElementById('productName').value;
+    const ProductQuantity = document.getElementById('productQuantity').value;
+
+    if (ProductName && ProductQuantity){
+        inventory.addItems(ProductName, ProductQuantity);
+
+        //to clear inputs after adding an item
+        document.getElementById('productName').value = '';
+        document.getElementById('productQuantity').value = '';
+    }
+}
+ 
+
 
