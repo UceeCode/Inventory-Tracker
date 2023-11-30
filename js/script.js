@@ -26,7 +26,8 @@ class Inventory{
             const row = TableBody.insertRow();
             row.insertCell(0).textContent = item.ProductName;
             row.insertCell(1).textContent = item.Quantity;
-            row.insertCell(2).textContent = item.Price
+            row.insertCell(2).textContent = 'N' + item.Price
+
 
 
             const DeleteBtn = document.createElement('button');
