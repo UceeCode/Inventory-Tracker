@@ -77,6 +77,12 @@ button:hover{
     color: white;
     transition: .5s;
 }
+footer{
+    text-align: center;
+    font-family: 'Nova Square', sans-serif;
+    background-color: #eee;
+    padding: 8px;
+}
 @media only screen and (max-width: 600px){
     .container{
         flex-direction: column;
