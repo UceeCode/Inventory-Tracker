@@ -17,6 +17,10 @@ class Inventory{
         this.renderInventory();
     }
 
+    calculateTotal(){
+        return this.items.reduce((total, item) => total + parseFloat(item.Price), 0);
+    }
+
     //creating a method to display the items in the table body
     renderInventory(){
         const TableBody = document.querySelector('#Table tbody');
@@ -26,7 +30,7 @@ class Inventory{
             const row = TableBody.insertRow();
             row.insertCell(0).textContent = item.ProductName;
             row.insertCell(1).textContent = item.Quantity;
-            row.insertCell(2).textContent = 'N' + item.Price
+            row.insertCell(2).textContent = 'N' + item.Price;
 
 
 
@@ -36,6 +40,14 @@ class Inventory{
 
             row.insertCell(3).appendChild(DeleteBtn);;
         });
+
+        this.UpdateTotal();
+    }
+
+    UpdateTotal(){
+        const Totalitems = document.getElementById('Totalamount');
+        const total = this.calculateTotal();
+        Totalitems.textContent = 'N' + total.toFixed(2);
     }
 }
 
